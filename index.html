@@ -1,0 +1,108 @@
+<!-- Document type declaration and root element of language set to English -->
+<!DOCTYPE html>
+<html lang="en">
+
+ <head>
+    <!-- The head element contains meta information about the document, (including making the page mobile responsive), the document title, and links the document to an external CSS file for styling-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katy Totah - Portfolio</title> 
+    <link rel="stylesheet" href="./assets/css/style.css"> 
+</head>
+
+<body>
+    <!-- Header containing navigational links -->
+    <header>
+        <div class="container">
+            <h1>Katy Totah</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <!-- Opens the resume PDF in a new tab -->
+                    <li><a href="./assets/images/resume.png" target="_blank">Resume</a></li> <!-- TO DOOOOO-->
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Subheader containing subtitle -->
+    <div class="subheader role="img" aria-label="colorful floral pattern">
+        <div class="subtitle-box">
+            <h2>Welcome to the party!</h2>
+        </div>
+    </div>
+
+    <!-- Main content area --> 
+    <main>
+        <!-- The section element is used for thematic grouping on content, each with a clear heading -->
+    
+        <!-- the ABOUT ME section of the site -->
+        <section id="about" class="about-me">
+            <h3>About Me</h3>
+            <div class="about-container">
+                <img src="./assets/images/katytotah.jpeg" alt="Katy Totah, author of this webpage. She's 25 years old with light olive skin and dark brown hair." class="about-image">
+                <div class="about-text">
+                    <p>Hi! My name is Katy Totah and I've always been interested in learning how to code. In my time as an undergraduate student at Columbia University, I never got around to exploring coding - so I am really glad that I'm able to learn full stack web development through this special program of Columbia's. As of right now in the course we have covered HTML and CSS, and we're just beginning to explore JavaScript. I hope that, in making this site, I'm able to demonstrate my newfound skills in HTML and CSS... and I will hopefully get to futher enhnace this page in the future as I acquire more coding skills! Thanks for stopping by!</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="work" class="my-work">
+            <h3>Work</h3>
+            <div class="work-container">
+                <!-- featured project -->
+                <article class="featured-project">
+                    <img src="./assets/images/poppy.jpeg" alt="field of poppy flowers backlit by the sun"> <!-- UPDATE -->
+                    <div class="project-info">Project 1</div>
+                </article>
+                <!-- Other projects -->
+                <div class = "project-grid">
+                    <article class="project">
+                        <img src="./assets/images/milky-way.jpeg" alt="the milky way">
+                        <div class="project-info">Project 2</div>
+                    </article>
+                    <article class="project">
+                        <img src="./assets/images/earth.jpeg" alt="a view of part of earth from outer space, where the sun is beginning to come into view from behing the earth">
+                        <div class="project-info">Project 3</div>
+                    </article>
+                    <article class="project">
+                        <img src="project4.jpg" alt="Project 4">
+                        <div class="project-info">Project 4</div>
+                    </article>
+                    <article class="project">
+                        <img src="project2.jpg" alt="Project 5">
+                        <div class="project-info">Project 5</div>
+                    </article>
+                    <!-- TO DO: REPEAT FOR OTHER PROJECTS  &&&&&& UPDATE--> 
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-me">
+            <h3>Contact Me</h3>
+            <div class="contact-container">
+                <!-- phone number link -->
+                <p><a href="tel:+15555555555">555.555.5555</a></p>
+                <!-- email link -->
+                <p><a href="mailto:ket2137@columbia,edu">ket2137@columbia.edu</a>"</p>
+                <!-- GitHub link -->
+                <p><a href="https://github.com/ktotah" target="_blank">GitHub</a></p>
+                <!-- Spotify link -->
+                <p><a href="https://open.spotify.com/user/katytotah" target="_blank">Spotify</a></p>
+            </div>
+        </section>
+</main>
+
+<!-- Footer area -->
+<footer>
+    <!-- TO DO: FOOTER – footer content, typically includes copyright, links to legal information, etc.  -->
+    <div class="container">
+        <p><!--- Footer content here --></p>
+    </div>
+</footer>
+
+</body>
+
+</html>
