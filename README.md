@@ -25,7 +25,12 @@ This portfolio is deployed and can be viewed here: [https://ktotah.github.io/kat
 - **Katy Totah** - *Initial work* - [Katy Totah](https://github.com/ktotah)
 
 ## Credit
-Original images by the site author: (1) [image of me](assets/images/katytotah.jpeg), (2) [image of my resume](assets/images/resume.png), (3) [screenshot of my Horiseon Accessibility Refactor application](assets/images/horiseon-accessibily-refactor.jpg), (4)[screenshot of my Prework Study Guide application](assets/images/prework-study-guide.jpg), and (5) the [screenshot of my deployed portfolio application](assets/images/screenshot.png).
+Original images by the site author: 
+- [image of me](assets/images/katytotah.jpeg)
+- [image of my resume](assets/images/resume.png) 
+- [screenshot of my Horiseon Accessibility Refactor application](assets/images/horiseon-accessibily-refactor.jpg)
+- [screenshot of my Prework Study Guide application](assets/images/prework-study-guide.jpg)
+- [screenshot of my deployed portfolio application](assets/images/screenshot.png).
 
 All other images used in this site were sourced from [pixabay.com](https://pixabay.com/).
 
