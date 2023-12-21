@@ -84,30 +84,34 @@ main {
 
 .main-section {
     display: flex;
-    align-items: flex-start;
     padding: 20px;
     box-sizing: border-box;
 }
 
 .section-heading {
+    display: flex;
     flex-basis: 25%;
+    justify-content: flex-end;
+    align-items: flex-start;
     margin: 0;
-    padding: 20px;
+    padding: 0 20px 20px 0;
 }
 
 h3 {
     color: #123456 ; /* dark blue text color for h3s */
-    font-size: 2.5em;
+    font-size: 2em;
 }
 
 .section-content {
     flex-basis: 75%;
     display: flex; /* makes the child elements flex items */
     border-left: 3px solid #123456;
-    padding-left: 20px;
+    padding-left: 40px;
     box-sizing: border-box;
 }
 
+
+ /* About Me styling */
 .about-image {
     /* styles for the profile picture */
     max-width: 200px;
@@ -121,6 +125,7 @@ h3 {
     flex-grow: 1; /* allows the text to fill the space */
 }
 
+/* Work styling*/
 .my-work {
     display: flex;
     flex-wrap: wrap;
@@ -161,17 +166,34 @@ h3 {
     background-color: #66ceeb;
     color: #3d3d3d;
     padding: 5px;
-    bottom: 10px;
-    left: 10px;
+    bottom: 40px;
+    left: 0px; /* aligned to the left side of the image */
 }
+
+/* Contact Me styling */
+
+.contact-me {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.contact-me a:hover {
+    color: #9D0B0B; /* color change on hover for interactivity, and selected a color with a good contrast ratio (7.23:1) against the background color of #eaeaea */
+}
+
+
+/* MEDIA QUERIES */
 @media (max-width: 768px){
     .about-image {
-        max-width: 150px; /* smaller maximum size on smaller screens */
+        max-width: 150x; /* smaller maximum size on smaller screens */
         height: auto;
     }
 
     .section-content {
         flex-direction: column; /* stack the images and text on top of each other */
+        
     }
 
     .about-text {
