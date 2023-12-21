@@ -52,6 +52,10 @@ header nav ul li a {
     font-size: 1.2em;
 }
 
+header nav ul li a:hover{
+    color:#27D343 /* color change on hover for interactivity */
+}
+
 /* SUBHEADER STYLING */
 
 .subheader {
@@ -123,6 +127,7 @@ h3 {
 .about-text {
     /* styles for the text in the about me section */
     flex-grow: 1; /* allows the text to fill the space */
+    font-size: larger; /* increased text size for readability */
 }
 
 /* WORK section styling*/
