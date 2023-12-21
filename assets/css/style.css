@@ -6,12 +6,11 @@ body {
     padding: 0;
     background-color: #eaeaea; /* light grey background for the overall page */
 }
-/* MAKE SURE COLORS ARE ACCESSIBLE!!!! want good contrast to make sure the site is accessible for those who are visually impaired */
 
 /* HEADER STYLING */
 header {
-    background-color: #3d3d3d; /* Dark gray background - has a 7.32:1 contrast ratio with #9edef0 */
-    color: #9EDEF0; /* Light blue text color for nav items - has a 7.32:1 contrast ratio with #3d3d3d */
+    background-color: #3d3d3d; /* Dark gray background - has a 7.32:1 contrast ratio with text color #9edef0 */
+    color: #9EDEF0; /* Light blue text color for nav items - has a 7.32:1 contrast ratio with background color #3d3d3d */
 }
 
 /* Styling for navigation bar */
@@ -60,7 +59,7 @@ header nav ul li a {
     background-size: cover; /* ensures the background covers the area */
     background-position: center; /* centers the background image */
     position: relative; /* for positioning the subtitle box */
-    padding: 50px 0; /* ADJUST THE PADDING TO FIT DESIGN */
+    padding: 50px 0;
 }
 
 .subtitle-box {
@@ -90,7 +89,7 @@ main {
 
 .section-heading {
     display: flex;
-    flex-basis: 25%;
+    flex-basis: 25%; 
     justify-content: flex-end;
     align-items: flex-start;
     margin: 0;
@@ -111,7 +110,7 @@ h3 {
 }
 
 
- /* About Me styling */
+ /* ABOUT ME section styling */
 .about-image {
     /* styles for the profile picture */
     max-width: 200px;
@@ -125,7 +124,7 @@ h3 {
     flex-grow: 1; /* allows the text to fill the space */
 }
 
-/* Work styling*/
+/* WORK section styling*/
 .my-work {
     display: flex;
     flex-wrap: wrap;
@@ -165,12 +164,12 @@ h3 {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.3); /* black shade with 50% opacity */
+    background: rgba(0, 0, 0, 0.3); /* black shade with 30% opacity */
     transition: background 0.3s ease; /* smooth transition for the hover effect */
 }
 
 .featured-project a:hover::before, .project a:hover::before {
-    background: transparent; /* clear background on hover */
+    background: transparent; /* clear background on hover - removed shading from images */
 }
 
 .project img {
