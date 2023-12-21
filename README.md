@@ -12,6 +12,10 @@ This portfolio is deployed and can be viewed [here] (the-URL-of-deployed-portfol
 ## Author and Acknowledgment
 - **Katy Totah** - *Initial work* - [Katy Totah](https://github.com/ktotah)
 
+## Credit
+
+Aside from the [image of me](assets/images/katytotah.jpeg) and [image of my resume](assets/images/resume.png), which are original images by the author, all other images used in this site were sourced from [pixabay.com](https://pixabay.com/)
+
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
