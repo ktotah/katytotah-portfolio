@@ -25,7 +25,9 @@ This portfolio is deployed and can be viewed here: [https://ktotah.github.io/kat
 - **Katy Totah** - *Initial work* - [Katy Totah](https://github.com/ktotah)
 
 ## Credit
-Aside from the [image of me](assets/images/katytotah.jpeg), [image of my resume](assets/images/resume.png) and [screenshot of the deployed application](assets/images/screenshot.png), which are three original images by the author, all other images used in this site were sourced from [pixabay.com](https://pixabay.com/)
+Original images by the site author: [image of me](assets/images/katytotah.jpeg), [image of my resume](assets/images/resume.png), [screenshot of the deployed application](assets/images/screenshot.png), [screenshot of my Horiseon Accessibility Refactor application](assets/images/horiseon-accessibily-refactor.jpg), and the [screenshot of my Prework Study Guide application](assets/images/prework-study-guide.jpg).
+
+All other images used in this site were sourced from [pixabay.com](https://pixabay.com/).
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
