@@ -99,6 +99,7 @@ main {
 h3 {
     color: #123456 ; /* dark blue text color for h3s, has a good contrast ratio against the background color #eaeaea (contrast ratio - 10.57:1) */
     font-size: 2em;
+    text-align: right;
 }
 
 .section-content {
@@ -209,8 +210,9 @@ h3 {
 /* MEDIA QUERIES */
 @media (max-width: 768px){
     .about-image {
-        max-width: 150x; /* smaller maximum size on smaller screens */
+        max-width: 250px; /* adjusting image size for when it is vertically stacked on top of text rather than to the side */
         height: auto;
+        margin: 0 auto; /* this centers the image */
     }
 
     .section-content {
@@ -227,9 +229,68 @@ h3 {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
+    h3 {
+        font-size: 1.5em;
+    }
+
     .about-image {
-        max-width: 80px;
+        max-width: 200px;
         height: auto;
     }
+
+}
+
+/* tested out sizes to see at what max-width things shifted out of wack on the page - then set up futher media queries to adjust for those points */
+@media (max-width: 588px) { 
+    header h1 {
+        font-size: 1.8em;
+    }
+    
+    h3 {
+        font-size: 1.5em;
+    }
+
+    .about-image {
+        max-width: 200px;
+        height: auto;
+    }
+}
+
+@media (max-width: 549px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+    
+    h3 {
+        font-size: 1.5em;
+    }
+
+    .about-image {
+        max-width: 200px;
+        height: auto;
+    }
+}
+
+@media (max-width: 549px) {
+    header h1 {
+        font-size: 1.4em;
+    }
+    
+    header nav ul li a {
+        font-size: 1em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    h3 {
+        font-size: 1.3em;
+    }
+
+    .about-image {
+        max-width: 200px;
+        height: auto;
+    } 
 }
