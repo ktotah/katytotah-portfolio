@@ -198,8 +198,12 @@ h3 {
     padding: 20px;
 }
 
+.contact-me a:visited { 
+    color: #00e /* so that the color doesn't automatically change to purple for visited links */
+}
+
 .contact-me a:hover {
-    color: #1f9219; /* color change on hover for interactivity */
+    color: #27D343; /* color change on hover for interactivity */
 }
 
 
