@@ -135,6 +135,7 @@ h3 {
 .featured-project {
     position: relative;
     width: 100%;
+    line-height: 0; /* so there's no shading after the image with the .featured-projust::before styling */
 }
 
 .featured-project img {
@@ -153,6 +154,23 @@ h3 {
 .project {
     position: relative;
     overflow: hidden; /* hide overflow to maintain aspect ratio */
+    line-height: 0;
+}
+
+/* shading the images in the work section, so I can contrast them with a clear background on hover */
+.featured-project a::before, .project a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3); /* black shade with 50% opacity */
+    transition: background 0.3s ease; /* smooth transition for the hover effect */
+}
+
+.featured-project a:hover::before, .project a:hover::before {
+    background: transparent; /* clear background on hover */
 }
 
 .project img {
@@ -168,6 +186,7 @@ h3 {
     padding: 5px;
     bottom: 40px;
     left: 0px; /* aligned to the left side of the image */
+    line-height: 1.5;
 }
 
 /* Contact Me styling */
@@ -180,7 +199,7 @@ h3 {
 }
 
 .contact-me a:hover {
-    color: #9D0B0B; /* color change on hover for interactivity, and selected a color with a good contrast ratio (7.23:1) against the background color of #eaeaea */
+    color: #1f9219; /* color change on hover for interactivity */
 }
 
 
