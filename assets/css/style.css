@@ -208,16 +208,17 @@ h3 {
 
 
 /* MEDIA QUERIES */
-@media (max-width: 768px){
-    .about-image {
-        max-width: 250px; /* adjusting image size for when it is vertically stacked on top of text rather than to the side */
-        height: auto;
-        margin: 0 auto; /* this centers the image */
-    }
 
+/* Adjustments for medium-sized devices. */
+@media (max-width: 768px){
     .section-content {
         flex-direction: column; /* stack the images and text on top of each other */
         
+    }
+
+    .about-image {
+        max-width: 250px; /* adjusting image size for when it is vertically stacked on top of text rather than to the side */
+        margin: 0 auto; /* this centers the image */
     }
 
     .about-text {
@@ -225,72 +226,65 @@ h3 {
     }
 
     .project-grid {
-        grid-template-columns: 1fr; /* stack images on smaller screens */
+        grid-template-columns: 1fr; /* stack images on smaller screens into a single column */
     }
 }
 
+/* Adjustments for small-sized devices. */
 @media (max-width: 600px) {
     h3 {
-        font-size: 1.5em;
+        font-size: 1.5em; /* scaling down section headings */
     }
 
     .about-image {
         max-width: 200px;
-        height: auto;
     }
 
 }
 
-/* tested out sizes to see at what max-width things shifted out of wack on the page - then set up futher media queries to adjust for those points */
+/* further refinements for specific small breakpoints that were determined via testing various viewpoints*/
 @media (max-width: 588px) { 
     header h1 {
-        font-size: 1.8em;
-    }
-    
-    h3 {
-        font-size: 1.5em;
-    }
-
-    .about-image {
-        max-width: 200px;
-        height: auto;
+        font-size: 1.8em; /* scaling down heading */
     }
 }
 
-@media (max-width: 549px) {
+@media (max-width: 534px) {
     header h1 {
-        font-size: 1.8em;
-    }
-    
-    h3 {
-        font-size: 1.5em;
-    }
-
-    .about-image {
-        max-width: 200px;
-        height: auto;
-    }
-}
-
-@media (max-width: 549px) {
-    header h1 {
-        font-size: 1.4em;
+        font-size: 1.4em; /* scaling down heading */
     }
     
     header nav ul li a {
-        font-size: 1em;
+        font-size: 1em; /* adjusting navigation link size for readability*/
     }
 
     h2 {
-        font-size: 1.2em;
+        font-size: 1.2em; /* scaling down subheading */
     }
 
     h3 {
-        font-size: 1.3em;
+        font-size: 1.3em; /* scaling down section headings */
+    }
+}
+
+@media (max-width: 460px) {
+    /* flex-wrap header container for better navigation item display */
+    header .container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    /* adjust navigation item margins for condensed space */
+    header nav ul li {
+        margin: 0 6px;
     }
 
-    .about-image {
-        max-width: 200px;
-        height: auto;
-    } 
+    .subheader {
+        padding: 10px 0;
+    }
+    
+    /* hides the subtitle box for screens with a max-width of 460px */
+    .subtitle-box {
+        visibility: hidden;
+    }
 }
