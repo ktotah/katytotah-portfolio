@@ -10,8 +10,8 @@ body {
 
 /* HEADER STYLING */
 header {
-    background-color: #3d3d3d; /* Dark gray background*/
-    color: #66ceeb; /* Light blue text color for nav items */
+    background-color: #3d3d3d; /* Dark gray background - has a 7.32:1 contrast ratio with #9edef0 */
+    color: #9EDEF0; /* Light blue text color for nav items - has a 7.32:1 contrast ratio with #3d3d3d */
 }
 
 /* Styling for navigation bar */
@@ -26,8 +26,8 @@ header .container {
 header h1 {
     display: flex;
     justify-content: flex-start;
-    background-color: #66ceeb; /* Light blue background for the title */
-    color: #3d3d3d; /* Dark gray text color to match the header background */
+    background-color: #9EDEF0; /* Light blue background for the title - has a 7.32:1 contrast ratio with #3d3d3d*/
+    color: #3d3d3d; /* Dark gray text color to match the header background - has a 7.32:1 contrast ratio with #9edef0*/
     padding: 10px;
     margin: 0; /* Resets any default margin */
     font-size: 2.5em; /* Largest font size for the title */
@@ -64,8 +64,8 @@ header nav ul li a {
 }
 
 .subtitle-box {
-    background-color: #66ceeb; /* light blue background color */
-    color: #3d3d3d; /* dark gray text color */
+    background-color: #9EDEF0; /* light blue background color - has a 7.32:1 contrast ratio with #3d3d3d */
+    color: #3d3d3d; /* dark gray text color - has a 7.32:1 contrast ratio with #9edef0 */
     padding: 3px 10px; /* padding inside the text box */
     position: absolute; /* absolute position within the subheader */
     bottom: 10px; /* near the bottom of the subheader image */
@@ -98,14 +98,14 @@ main {
 }
 
 h3 {
-    color: #123456 ; /* dark blue text color for h3s */
+    color: #123456 ; /* dark blue text color for h3s, has a good contrast ratio against the background color #eaeaea (contrast ratio - 10.57:1) */
     font-size: 2em;
 }
 
 .section-content {
     flex-basis: 75%;
     display: flex; /* makes the child elements flex items */
-    border-left: 3px solid #123456;
+    border-left: 3px solid #123456; /* border color of #123456 has a good contrast ratio againt the background color #eaeaea (contrast ratio - 10.57:1) */
     padding-left: 40px;
     box-sizing: border-box;
 }
@@ -163,8 +163,8 @@ h3 {
 
 .project-info {
     position: absolute;
-    background-color: #66ceeb;
-    color: #3d3d3d;
+    background-color: #9EDEF0; /* has a 7.32:1 contrast ratio with text color #3d3d3d */
+    color: #3d3d3d; /* has a 7.32:1 contrast ratio with background color #9edef0 */
     padding: 5px;
     bottom: 40px;
     left: 0px; /* aligned to the left side of the image */
