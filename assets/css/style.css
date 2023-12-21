@@ -1,4 +1,4 @@
-/* General Styles */
+/* GENERAL STYLING*/
 body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     line-height: 1.5;
@@ -8,14 +8,7 @@ body {
 }
 /* MAKE SURE COLORS ARE ACCESSIBLE!!!! want good contrast to make sure the site is accessible for those who are visually impaired */
 
-/* IS CONTAINER NECESSARY?? */
-/* Container used for centering content within sections */
-.container {
-    margin: auto; /* centers the container */
-    overflow: hidden; /* ensures no content spills out */
-}
-
-/* Header Styles */
+/* HEADER STYLING */
 header {
     background-color: #3d3d3d; /* Dark gray background*/
     color: #66ceeb; /* Light blue text color for nav items */
@@ -59,7 +52,8 @@ header nav ul li a {
     color: inherit;
     font-size: 1.2em;
 }
-/* SHOULD I INCLUDE A HOVER SITUATION?? */
+
+/* SUBHEADER STYLING */
 
 .subheader {
     background-image: url("../images/floral.jpeg"); 
@@ -78,165 +72,120 @@ header nav ul li a {
     right: 20px; /*aligns with the right edge */
 }
 
-/* MAIN CONTENT */
+
+/* MAIN CONTENT STYLING*/
+
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.main-section {
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.section-heading {
+    flex-basis: 25%;
+    margin: 0;
+    padding: 20px;
+}
 
 h3 {
     color: #123456 ; /* dark blue text color for h3s */
     font-size: 2.5em;
-    margin: 0 0 20px 0;
-    padding-right: 20px; /* space between h3 and content */
 }
 
-/* About me section styling */
-
-.about-me, .my-work, .contact-me {
-    display: flex;
-    align-items: center;
-    padding: 50px;
-    gap: 20px; /* space between h3 and content */
-}
-
-.about-container, .work-container, .contact-container  {
-    display: flex;
-    align-items: center;
-    padding-left: 20px; /* space inside the content area */
-    gap: 20px; /* space between image and text */
-    border-left: 3px solid #123456; /* left border as a separator */
-    width: 100%;
+.section-content {
+    flex-basis: 75%;
+    display: flex; /* makes the child elements flex items */
+    border-left: 3px solid #123456;
+    padding-left: 20px;
+    box-sizing: border-box;
 }
 
 .about-image {
-    /* styles for the image */
-    width: 100px;
+    /* styles for the profile picture */
+    max-width: 200px;
     height: auto;
+    object-fit: contain;
+    margin-right: 20px;
 }
 
 .about-text {
-    /* styles for the text */
+    /* styles for the text in the about me section */
     flex-grow: 1; /* allows the text to fill the space */
 }
 
-/* Work Section styling*/
-
-.work-container {
+.my-work {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
 }
 
-/* DOES THIS NEED BACKGROUND IMAGE????? */
-#work .featured-project {
-    width: 100%; /* full width for the featured project */
-    position: relative; /* for positioning the description */
+.featured-project {
+    position: relative;
+    width: 100%;
 }
 
 .featured-project img {
     width: 100%;
     height: auto;
-    display: block;
+    object-fit: cover; /* cover the area without stretching */
 }
 
-#work .featured-project .project-info {
-    position: absolute;
-    background-color: #66ceeb; 
-    color: #3d3d3d;
-    padding: 5px;
-    bottom: 20px; /* near the bottom of the image */
-    left: 0px; /* algined to the left side of the image */
-}
-
-#work .project-grid {
+.project-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* 2 columns */
-    gap: 20px; /* space between the grid items */
-    padding: 20px 0;
- }
+    grid-template-columns: repeat(2, 1fr); /* two columns */
+    gap: 20px;
+    margin-top: 20px; 
+}
 
- /* IS THIS MEANT TO BE A BACKGROUND COLOR OR IMAGE???? */
-.project-grid .project {
+.project {
     position: relative;
-    width: 100%;
-    overflow: hidden;
- }
-
-
+    overflow: hidden; /* hide overflow to maintain aspect ratio */
+}
 
 .project img {
     width: 100%;
-    display: block;
+    height: auto;
+    object-fit: cover; /* cover the area without stretching */
 }
 
-#work .project .project-info {
+.project-info {
     position: absolute;
-    top: 50%; /* centered vertically */
-    transform: translateY(-50%); /* offset by half the height */
-    left: 0px; /* aligned to the left side of the image */
     background-color: #66ceeb;
     color: #3d3d3d;
     padding: 5px;
- }
-
-/* Contact section styling */
-
-/* Flex container for contact items */
-.contact-me {
-    display: flex;
-    justify-content: space-around; /* even spacing around items */
-    padding: 20px;
+    bottom: 10px;
+    left: 10px;
 }
-
-/* Contact item anchor tags */
-.contact-me a {
-    color: #333; /* Dark color for readibility */
-    margin: 10px 0; /* space above and below */
-}
-
-/* Hover effect for contact links */
-.contact-item a:hover {
-    color: #007b5f ; /* color change on hover for interactivity */
-}
-
-/* Footer styles */
-footer {
-    background-color: #5b5b5f;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-}
-
-/* Repsponsive Layout */
 @media (max-width: 768px){
-    /* Adjust styles for navbar on smaller screens */
-    .subheader {
-        padding: 50px 0; /* Smaller padding for smaller devices */
+    .about-image {
+        max-width: 150px; /* smaller maximum size on smaller screens */
+        height: auto;
     }
 
-    .subtitle-box {
-        margin-right: 10%; /* adjusts alignment on smaller screens */
-        width: auto; /* allows the box to shrink */
+    .section-content {
+        flex-direction: column; /* stack the images and text on top of each other */
+    }
+
+    .about-text {
+        width: 100%; /* allows text to fill the container */
     }
 
     .project-grid {
-        grid-template-columns: 1fr; /* stack projects in a single column on small screens */
+        grid-template-columns: 1fr; /* stack images on smaller screens */
     }
-
-   
 }
 
-/* MEDIA QUERIES TO EXPLORE - via w3schools
-
-extra small devices (phones, 600px and down)
-@media only screen and (max-width: 600px) {...}
-
-small devices (portrait tablets and large phones, 600px and up)
-@media only screen and (min-width: 600px) {...}
-
-medium devices (landscape tablets, 768px and up)
-@media only screen and (min-width: 768px) {...}
-
-large devices (laptops/desktops, 992px and up)
-@media only screen and (min-width: 992px) {...}
-
-extra large devices (large laptios and desktops, 1200px and up)
-@media only screen and (min-width: 1200px) {...}
-
-test the breakbooks using chrome developer tools!!!
+@media (max-width: 480px) {
+    .about-image {
+        max-width: 80px;
+        height: auto;
+    }
+}
